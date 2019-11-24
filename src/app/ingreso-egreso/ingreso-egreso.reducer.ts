@@ -6,6 +6,7 @@ export interface IngresoEgresoState {
     items: IngresoEgreso[];
 }
 
+// Modificacion para extender las propiedades del AppState pincipal (LazyLoad del Store)
 export interface AppState extends AppState {
     ingresoEgreso: IngresoEgresoState;
 }

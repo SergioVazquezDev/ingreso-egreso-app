@@ -28,6 +28,7 @@ export class IngresoEgresoComponent implements OnInit, OnDestroy {
 
   constructor(
     public ingresoEgresoService: IngresoEgresoService,
+    // Ajuste del AppStare de LazyLoad y no del AppState principal
     private store: Store<fromIngresoEgreso.AppState>
   ) {}
 

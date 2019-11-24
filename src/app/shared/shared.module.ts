@@ -6,20 +6,15 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { RouterModule } from '@angular/router';
 
+// Modulo personalizado. Se encargará de todo lo relacionado al share. Footer, navbar y sidebar
 @NgModule({
   imports: [
     CommonModule,
+    // Importamos el RouterModule para que funcionen los links
     RouterModule
   ],
-  declarations: [
-    FooterComponent,
-    NavbarComponent,
-    SidebarComponent
-  ],
-  exports: [
-    FooterComponent,
-    NavbarComponent,
-    SidebarComponent
-  ]
+  declarations: [FooterComponent, NavbarComponent, SidebarComponent],
+  // Para poder usar esos componentes fuera incluimos exports
+  exports: [FooterComponent, NavbarComponent, SidebarComponent]
 })
-export class SharedModule { }
+export class SharedModule {}

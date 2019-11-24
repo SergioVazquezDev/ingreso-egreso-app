@@ -13,7 +13,7 @@ import { appReducers } from './app.reducer';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 
-// Modulos personalizados
+// Modulo personalizado
 import { AuthModule } from './auth/auth.module';
 
 // Environment

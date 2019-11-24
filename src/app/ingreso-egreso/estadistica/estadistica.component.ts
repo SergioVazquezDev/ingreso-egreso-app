@@ -4,6 +4,7 @@ import { Store } from '@ngrx/store';
 import { Subscription } from 'rxjs';
 import { IngresoEgreso } from '../ingreso-egreso.model';
 
+// Importamos el State con el LazyLoad
 import * as fromIngresoEgreso from '../ingreso-egreso.reducer';
 
 
@@ -28,6 +29,7 @@ export class EstadisticaComponent implements OnInit {
   public doughnutChartLabels: string[] = ['Egresos', 'Ingresos'];
   public doughnutChartData: number[] = [];
 
+  // Ajuste del AppStare de LazyLoad y no del AppState principal
   constructor( private store: Store<fromIngresoEgreso.AppState> ) { }
 
   ngOnInit() {

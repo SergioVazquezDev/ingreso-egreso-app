@@ -11,6 +11,7 @@ const routes: Routes = [
         path: '',
         component: DashboardComponent,
         children: dashboardRoutes,
+        // Los Guard ahora estarían en auth-guard
         // canActivate: [ AuthGuardService ]
     }
 ];
@@ -18,6 +19,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
+    // Aqui va forChild, no forRoot, forRoot es para el routing principal.
     RouterModule.forChild( routes )
   ],
   exports: [
