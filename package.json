@@ -23,7 +23,7 @@
     "@ngrx/store": "^8.4.0",
     "@ngrx/store-devtools": "^8.4.0",
     "bootstrap": "^4.3.1",
-    "chart.js": "^2.9.1",
+    "chart.js": "^2.9.4",
     "core-js": "^3.3.6",
     "firebase": "^7.2.3",
     "ng2-charts": "^2.3.0",
